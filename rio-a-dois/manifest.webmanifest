@@ -1,0 +1,17 @@
+{
+  "name": "Rio a dois",
+  "short_name": "Rio a dois",
+  "description": "Roteiro, mapa, gastos, fotos e notas da viagem ao Rio, 20 a 25 de novembro de 2026.",
+  "lang": "pt-BR",
+  "start_url": "./index.html#hoje",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F5EEE1",
+  "theme_color": "#1D4B58",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

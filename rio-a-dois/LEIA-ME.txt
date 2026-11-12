@@ -1,0 +1,33 @@
+RIO A DOIS · app da viagem (PWA) com sincronização entre os dois celulares
+João Pedro & Luiza Clara · 20 a 25 de novembro de 2026
+
+1. PUBLICAR NO VERCEL (uma vez, uns 10 minutos, tudo grátis)
+a) Crie uma conta em vercel.com (pode entrar com o GitHub).
+b) Publique esta pasta de um destes jeitos:
+   · GitHub: crie um repositório com o conteúdo da pasta "rio-a-dois" e, no Vercel,
+     "Add New > Project" > importe o repositório. Framework Preset: "Other".
+     Build Command: vazio. Output Directory: vazio (a raiz).
+   · Terminal: dentro da pasta "rio-a-dois", rode  npx vercel  e depois  npx vercel --prod
+c) No projeto do Vercel, abra "Storage" > "Create Database" > "Upstash for Redis" (plano grátis)
+   > conecte ao projeto. As variáveis do banco entram sozinhas.
+d) Em "Settings" > "Environment Variables", crie TRIP_KEY com um código que só vocês saibam
+   (ex.: uma frase sem espaços). Marque Production, Preview e Development.
+e) Em "Deployments", clique nos três pontinhos do último deploy > "Redeploy", para valer o banco e o código.
+
+2. INSTALAR NOS CELULARES
+iPhone: abra o endereço no Safari > Compartilhar > "Adicionar à Tela de Início".
+Android: abra no Chrome > menu ⋮ > "Instalar app".
+
+3. LIGAR A SINCRONIZAÇÃO (em cada celular)
+Mais > Backup e ajustes > Sincronização automática > digite o código (o mesmo TRIP_KEY) > Ligar.
+A partir daí, gastos, notas, presentes, checklists, status das paradas, reservas e fotos
+aparecem no outro celular em poucos segundos. Sem internet, tudo fica guardado no aparelho
+e vai sozinho quando a internet voltar.
+
+4. BACKUP EM ARQUIVO (cópia extra)
+Mais > Backup e ajustes > "Tudo, com fotos (.zip)". Vale fazer uma vez por dia e guardar no Drive.
+
+PRIVACIDADE
+Sem login, sem anúncios, sem rastreamento. Os dados ficam em cada celular e no banco do
+próprio projeto de vocês no Vercel/Upstash, acessível só com o código da viagem.
+A localização nunca sai do celular. Sem o código, quem abrir o link vê só o roteiro.
