@@ -13,15 +13,17 @@
 <meta name="apple-mobile-web-app-title" content="Rio a dois">
 <meta name="format-detection" content="telephone=no">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" type="image/png" href="icons/favicon.png">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="brand/favicon.ico" sizes="any">
+<link rel="icon" href="brand/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="brand/apple-touch-icon.png">
 <link rel="preload" href="fonts/newsreader-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/app.css">
-<style>:where(html,body){background:#121210}#boot{display:grid;place-items:center;min-height:80dvh;font-family:Georgia,serif;color:#EAE2D6;font-size:2rem}#boot i{color:#C85A3B;font-style:normal}</style>
+<style>:where(html,body){background:#121210}#boot{display:grid;place-items:center;min-height:80dvh}#boot img{width:min(70vw,260px);height:auto}</style>
 </head>
 <body>
-<main id="app"><div id="boot">Rio a dois<i>.</i></div></main>
+<main id="app"><div id="boot"><img src="brand/logo-inicio-degrade.svg" alt="Rio a dois" width="865" height="180"></div></main>
+<div class="edge edge-t" aria-hidden="true"></div><div class="edge edge-b" aria-hidden="true"></div>
 <nav class="tabs" id="tabs" aria-label="Navegação principal"></nav>
 <div class="toasts" id="toasts" aria-live="polite"></div>
 <div id="layer"></div>
